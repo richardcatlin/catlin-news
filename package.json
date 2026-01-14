@@ -31,5 +31,8 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
     "zksync-ethers": "^6.17.0"
+  },
+  "dependencies": {
+    "@matterlabs/hardhat-zksync-solc": "^1.5.1"
   }
 }

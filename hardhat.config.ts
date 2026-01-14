@@ -39,12 +39,21 @@ const config: HardhatUserConfig = {
       zksync: true,
     },
   },
+  // zksolc: {
+  //   version: '1.5.15',
+  //   settings: {
+  //     codegen: 'yul',
+  //     // find all available options in the official documentation
+  //     // https://docs.zksync.io/build/tooling/hardhat/hardhat-zksync-solc#configuration
+  //   },
+  // },
   zksolc: {
-    version: '1.5.15',
+    // version: "1.5.15", // Use the desired version
+    // compilerSource: "binary",
     settings: {
       codegen: 'yul',
-      // find all available options in the official documentation
-      // https://docs.zksync.io/build/tooling/hardhat/hardhat-zksync-solc#configuration
+      compilerPath: "/Users/richardcatlin/zksolc-macosx-arm64-v1.5.15", // Replace with your actual path
+      // ... other settings (optional)
     },
   },
   solidity: {
